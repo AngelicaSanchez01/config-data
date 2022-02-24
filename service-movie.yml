@@ -1,0 +1,17 @@
+server:
+  port: 9202
+  servlet:
+    context-path: /cine/v1
+spring:
+  application:
+    name: service-movie
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:movieBD;
+    driver-class-name: org.h2.Driver
+    platform: h2
+    username: sa
+    password:
+
